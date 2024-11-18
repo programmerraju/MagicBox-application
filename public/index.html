@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MagicBox Application Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <h1>MagicBox Application Form</h1>
+    <form id="application-form">
+      <!-- Personal/Team Details -->
+      <fieldset>
+        <legend>Personal/Team Details</legend>
+        <label for="teamName">Applicant/Team Name:</label>
+        <input type="text" id="teamName" name="teamName" required>
+        
+        <label for="contactName">Primary Contact Person:</label>
+        <input type="text" id="contactName" name="contactName" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <label for="teamMembers">Team Composition:</label>
+        <textarea id="teamMembers" name="teamMembers" placeholder="Enter team member details"></textarea>
+      </fieldset>
+
+      <!-- Project Overview -->
+      <fieldset>
+        <legend>Project Overview</legend>
+        <label for="title">Title of the Solution:</label>
+        <input type="text" id="title" name="title" required>
+        
+        <label for="problemStatement">Problem Statement:</label>
+        <textarea id="problemStatement" name="problemStatement" required></textarea>
+        
+        <label for="solution">Proposed Solution:</label>
+        <textarea id="solution" name="solution" required></textarea>
+        
+        <label for="pillars">Targeted MAGIC Pillars:</label>
+        <select id="pillars" name="pillars" multiple required>
+          <option value="Market">Market</option>
+          <option value="Academia">Academia</option>
+          <option value="Government">Government</option>
+          <option value="Industry">Industry</option>
+          <option value="Community">Community</option>
+        </select>
+      </fieldset>
+
+      <!-- Technical Details -->
+      <fieldset>
+        <legend>Technical Details</legend>
+        <label for="techStack">Tech Stack Used:</label>
+        <textarea id="techStack" name="techStack" required></textarea>
+        
+        <label for="scalability">Scalability and Feasibility:</label>
+        <textarea id="scalability" name="scalability" required></textarea>
+        
+        <label for="alignment">Alignment with MAGIC Framework:</label>
+        <textarea id="alignment" name="alignment" required></textarea>
+      </fieldset>
+
+      <!-- Impact Analysis -->
+      <fieldset>
+        <legend>Impact Analysis</legend>
+        <label for="benefits">Potential Benefits:</label>
+        <textarea id="benefits" name="benefits" required></textarea>
+        
+        <label for="metrics">Sustainability and Inclusivity Metrics:</label>
+        <textarea id="metrics" name="metrics" required></textarea>
+      </fieldset>
+
+      <!-- Attachments -->
+      <fieldset>
+        <legend>Attachments</legend>
+        <label for="pitchDeck">Pitch Deck:</label>
+        <input type="file" id="pitchDeck" name="pitchDeck">
+        
+        <label for="prototype">Prototype Link or PoC:</label>
+        <input type="url" id="prototype" name="prototype">
+        
+        <label for="documents">Supporting Documents:</label>
+        <input type="file" id="documents" name="documents" multiple>
+      </fieldset>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
